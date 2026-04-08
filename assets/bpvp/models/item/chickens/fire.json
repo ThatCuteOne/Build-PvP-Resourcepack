@@ -1,0 +1,6 @@
+{
+    "parent": "item/chicken_spawn_egg",
+    "textures": {
+        "layer0":"bpvp:item/chickens/fire"
+    }
+}
