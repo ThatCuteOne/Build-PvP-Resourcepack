@@ -9,6 +9,13 @@
                 "nc"
             ]
         },
+                {
+            "type": "bitmap",
+            "file": "bpvp:font/fade.png",
+            "ascent": 200,
+            "height": 25500,
+            "chars": ["f"]
+        },
         {
             "type":"space",
             "advances":{
