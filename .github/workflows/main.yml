@@ -14,7 +14,10 @@ jobs:
       uses: actions/checkout@v2
       with:
         fetch-depth: 0 # A non-shallow repository clone is required
-
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+          python-version: '3.14.3'
     - name: Run PackSquash
       uses: ComunidadAylas/PackSquash-action@v4
       with:
@@ -23,6 +26,7 @@ jobs:
 
     - name: Create ZIP file
       run: |
+        python .github/workflows/pack_description.py
         COMMIT_ID=$(git rev-parse --short HEAD)
         ZIP_NAME="RP.zip"
         echo "ZIP_NAME=${ZIP_NAME}" >> $GITHUB_ENV
