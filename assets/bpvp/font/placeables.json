@@ -1,22 +1,31 @@
 {
-    "providers": [
-        {
-            "type": "bitmap",
-            "file": "bpvp:font/bridge.png",
-            "ascent": 6,
-             "height": 6,
-             "chars": [
-                "b"
-             ]
-        },
-                {
-            "type": "bitmap",
-            "file": "bpvp:font/stair.png",
-            "ascent": 9,
-             "height": 9,
-             "chars": [
-                "s"
-             ]
-        }
-    ]
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "bpvp:font/bridge.png",
+      "ascent": 6,
+      "height": 6,
+      "chars": [
+        "b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "bpvp:font/stair.png",
+      "ascent": 9,
+      "height": 9,
+      "chars": [
+        "s"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "bpvp:font/wall.png",
+      "ascent": 9,
+      "height": 9,
+      "chars": [
+        "w"
+      ]
+    }
+  ]
 }
