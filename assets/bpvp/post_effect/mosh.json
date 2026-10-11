@@ -10,7 +10,7 @@
 	"passes": [
 		{
 			"vertex_shader": "minecraft:core/screenquad",
-			"fragment_shader": "test:post/block_avg",
+			"fragment_shader": "bpvp:post/block_avg",
 			"inputs": [
 				{
 					"target": "last",
@@ -21,7 +21,7 @@
 		},
 		{
 			"vertex_shader": "minecraft:core/screenquad",
-			"fragment_shader": "test:post/block_avg",
+			"fragment_shader": "bpvp:post/block_avg",
 			"inputs": [
 				{
 					"target": "minecraft:main",
@@ -32,7 +32,7 @@
 		},
 		{
 			"vertex_shader": "minecraft:core/screenquad",
-			"fragment_shader": "test:post/mosh",
+			"fragment_shader": "bpvp:post/mosh",
 			"inputs": [
 				{
 					"target": "last",

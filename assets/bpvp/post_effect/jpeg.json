@@ -5,7 +5,7 @@
     "passes": [
         {
             "vertex_shader": "minecraft:core/screenquad",
-            "fragment_shader": "test:post/block_blur",
+            "fragment_shader": "bpvp:post/block_blur",
             "inputs": [
                 {
                     "sampler_name": "In",
@@ -18,7 +18,7 @@
         },
         {
             "vertex_shader": "minecraft:core/screenquad",
-            "fragment_shader": "test:post/posterize",
+            "fragment_shader": "bpvp:post/posterize",
             "inputs": [
                 {
                     "sampler_name": "In",
@@ -31,7 +31,7 @@
         },
         {
             "vertex_shader": "minecraft:core/screenquad",
-            "fragment_shader": "test:post/scanlines",
+            "fragment_shader": "bpvp:post/scanlines",
             "inputs": [
                 {
                     "sampler_name": "In",
