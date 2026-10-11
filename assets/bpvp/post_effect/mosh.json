@@ -1,0 +1,82 @@
+{
+	"targets": {
+		"last": {
+			"persistent": true,
+			"clear_color": 7829115
+		},
+		"last_avg": {},
+		"main_avg": {}
+	},
+	"passes": [
+		{
+			"vertex_shader": "minecraft:core/screenquad",
+			"fragment_shader": "test:post/block_avg",
+			"inputs": [
+				{
+					"target": "last",
+					"sampler_name": "In"
+				}
+			],
+			"output": "last_avg"
+		},
+		{
+			"vertex_shader": "minecraft:core/screenquad",
+			"fragment_shader": "test:post/block_avg",
+			"inputs": [
+				{
+					"target": "minecraft:main",
+					"sampler_name": "In"
+				}
+			],
+			"output": "main_avg"
+		},
+		{
+			"vertex_shader": "minecraft:core/screenquad",
+			"fragment_shader": "test:post/mosh",
+			"inputs": [
+				{
+					"target": "last",
+					"sampler_name": "Last"
+				},
+				{
+					"target": "last_avg",
+					"sampler_name": "LastAvg"
+				},
+				{
+					"target": "minecraft:main",
+					"sampler_name": "Main"
+				},
+				{
+					"target": "main_avg",
+					"sampler_name": "MainAvg"
+				}
+			],
+			"output": "minecraft:main"
+		},
+		{
+			"vertex_shader": "minecraft:core/screenquad",
+			"fragment_shader": "minecraft:post/blit",
+			"inputs": [
+				{
+					"target": "main",
+					"sampler_name": "In"
+				}
+			],
+			"output": "last",
+			"uniforms": {
+				"BlitConfig": [
+					{
+						"name": "ColorModulate",
+						"type": "vec4",
+						"value": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				]
+			}
+		}
+	]
+}
