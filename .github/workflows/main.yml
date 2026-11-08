@@ -16,8 +16,6 @@ jobs:
         fetch-depth: 0 # A non-shallow repository clone is required
     - name: Set up Python
       uses: actions/setup-python@v4
-      with:
-          python-version: '3.14.3'
     - name: Create ZIP file
       run: |
         python .github/workflows/pack_description.py
